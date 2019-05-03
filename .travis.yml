@@ -10,7 +10,7 @@ install:
 before_install:
     - export TZ='Asia/Taipei' # 更改时区
     - npm install hexo-cli -g  # 安装hexo环境
-    - git clone https://github.com/nettee/hexo-theme-next themes/next
+    - git clone https://github.com/chianChen/hexo-theme-next themes/next
     - chmod +x ./publish-to-gh-pages.sh  # 为shell文件添加可执行权限
 after_script:
     - ./publish-to-gh-pages.sh
