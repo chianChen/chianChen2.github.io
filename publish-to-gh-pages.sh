@@ -6,8 +6,8 @@ git checkout master
 cd ../
 mv .deploy_git/.git/ ./public/
 cd ./public
-git config user.name  "hadronw"
-git config user.email "hadronw@qq.com" 
+git config user.name  "joseph"
+git config user.email "joseph8225@yahoo.com.tw" 
 # add commit timestamp
 git add .
 git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
