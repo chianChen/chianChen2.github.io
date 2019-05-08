@@ -238,6 +238,169 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/08/寫CSS之算數學/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chian chen">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ChiAn">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/08/寫CSS之算數學/" itemprop="url">寫CSS之算數學</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-08T18:00:00+08:00">
+                2019-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="寫CSS之算數學"><a href="#寫CSS之算數學" class="headerlink" title="寫CSS之算數學"></a>寫CSS之算數學</h1><p>今天遇到一個問題</p>
+<p>當大小 400*300 的圖</p>
+<p>要塞進比例是 2.134：1 的框時</p>
+<p>又想要她是垂直置中的</p>
+<p>要怎麼做</p>
+<p>試了幾個方法</p>
+<ol>
+<li>vertical-align</li>
+<li>line-height</li>
+<li>top</li>
+<li>bottom</li>
+</ol>
+<p>最後無法就使用 margin-top 負數來解決</p>
+<p>100vw是我目前圖檔的寬</p>
+<p>100vw*3/4是原始比例下的高</p>
+<p>100vw/2.134是我目前圖檔的高</p>
+<p>所以原始比例的高 減掉 目前的高 再除2</p>
+<p>將會是我圖檔移動後置中的距離</p>
+<p>(100vw<em>3/4 - 100vw/2.134)/2 = 100vw </em> 0.375 - 100vw <em> 0.2343 = 0.1397 </em> 100vw</p>
+<p>答案就是設定</p>
+<p>margin-top: calc(-100vw * 0.1397);</p>
+<p>完成圖片置中顯示</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/03/second/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -535,14 +698,32 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
             
 
           </nav>
