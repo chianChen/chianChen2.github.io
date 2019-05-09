@@ -39,7 +39,7 @@ before_install:
 
 內容分別是
 
-```YAML
+```
 ---
 title: 文章分类
 date: 2019-05-08 00:00:00
@@ -49,7 +49,7 @@ type: "categories"
 
 與
 
-```YAML
+```
 ---
 title: 文章標籤
 date: 2019-05-08 00:00:00
