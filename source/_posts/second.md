@@ -3,9 +3,9 @@ title: 自動部屬設定
 date: 2019-05-03 00:00:00
 updated: 2019-05-08 00:00:00
 tags:
--hexo設定
--標籤設定
--分類設定
+- hexo設定
+- 標籤設定
+- 分類設定
 ---
 
 # 自動部屬設定
@@ -39,11 +39,23 @@ before_install:
 
 內容分別是
 
-
+```YAML
+---
+title: 文章分类
+date: 2019-05-08 00:00:00
+type: "categories"
+---
+```
 
 與
 
-
+```YAML
+---
+title: 文章標籤
+date: 2019-05-08 00:00:00
+type: "tags"
+---
+```
 
 儲存後再到 Fork 出的主題包 hexo-theme-next 裡面修改
 
