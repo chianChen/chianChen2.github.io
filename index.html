@@ -421,6 +421,143 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/03/second/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chian chen">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ChiAn">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/03/second/" itemprop="url">自動部屬設定</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-03T00:00:00+08:00">
+                2019-05-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="自動部屬設定"><a href="#自動部屬設定" class="headerlink" title="自動部屬設定"></a>自動部屬設定</h1><p>可參考<br><a href="https://hadronw.com/2018/05-27/travis-autodeploy-github-with-coding/" target="_blank" rel="noopener">https://hadronw.com/2018/05-27/travis-autodeploy-github-with-coding/</a><br>因有改theme<br>所以要加一段在</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">before_install:</span><br><span class="line">    - export TZ=&apos;Asia/Taipei&apos; # 更改时区</span><br><span class="line">    - npm install hexo-cli -g  # 安装hexo环境</span><br><span class="line">    - git clone https://github.com/chianChen/hexo-theme-next themes/next</span><br><span class="line">    - chmod +x ./publish-to-gh-pages.sh  # 为shell文件添加可执行权限</span><br></pre></td></tr></table></figure>
+<p>記得要先去 Fork 原來 theme</p>
+<h1 id="標籤與分類"><a href="#標籤與分類" class="headerlink" title="標籤與分類"></a>標籤與分類</h1><p>因為我最後都是在github上直接修改檔案</p>
+<p>所以我是直接在</p>
+<p>我的 hexo 分支內的 source</p>
+<p>分別建立 categories 與 tags 檔案夾</p>
+<p>再到裡面建 index.md</p>
+<p>內容分別是</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章分类</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="bullet">-05</span><span class="bullet">-08</span> <span class="number">00</span><span class="string">:00:00</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">"categories"</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p>與</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">文章標籤</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="bullet">-05</span><span class="bullet">-08</span> <span class="number">00</span><span class="string">:00:00</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">"tags"</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p>儲存後再到 Fork 出的主題包 hexo-theme-next 裡面修改</p>
+<p>_config.yml</p>
+<p>把這兩個</p>
+<p>tags: /tags/ || tags<br>categories: /categories/ || th</p>
+<p>前面的 # 拿掉</p>
+<p>再去執行一次 travis 裡面的 Restart build 就成功囉</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/05/first/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -597,7 +734,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -619,7 +756,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
