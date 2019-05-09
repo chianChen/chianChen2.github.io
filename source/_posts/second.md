@@ -39,23 +39,11 @@ before_install:
 
 內容分別是
 
-```
----
-title: 文章分类
-date: 2019-05-08 00:00:00
-type: "categories"
----
-```
+
 
 與
 
-```
----
-title: 文章標籤
-date: 2019-05-08 00:00:00
-type: "tags"
----
-```
+
 
 儲存後再到 Fork 出的主題包 hexo-theme-next 裡面修改
 
