@@ -12,7 +12,8 @@ before_install:
     - npm install hexo-cli -g  # 安装hexo环境
     - git clone https://github.com/chianChen/hexo-theme-next themes/next
     - chmod +x ./publish-to-gh-pages.sh  # 为shell文件添加可执行权限
-    - yarn add hexo-generator-sitemap # 為網站安裝hexo-sitemap-generator產生sitemap
+    - npm install hexo-generator-sitemap --save # 為網站產生sitemap
+    - npm install hexo-generator-baidu-sitemap --save # 為網站產生百度sitemap
 after_script:
     - ./publish-to-gh-pages.sh
 script:
