@@ -81,3 +81,8 @@ deploy:
   type: git
   repo: https://github.com/chianChen/chianChen.github.io
   
+sitemap: 
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+url: https://chianChen.github.io
