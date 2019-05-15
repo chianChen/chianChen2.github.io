@@ -6,8 +6,8 @@ cache:
         - node_modules # 缓存不经常更改的内容
 install:
     - npm install # 安装hexo及插件
-    #- npm install hexo-generator-sitemap --save # 為網站產生sitemap
-    #- npm install hexo-generator-baidu-sitemap --save # 為網站產生百度sitemap
+    - npm install hexo-generator-sitemap --save # 為網站產生sitemap
+    - npm install hexo-generator-baidu-sitemap --save # 為網站產生百度sitemap
     - npm rebuild node-sass --force #该命令是根据构建失败的日志提示添加的
 before_install:
     - export TZ='Asia/Taipei' # 更改时区
