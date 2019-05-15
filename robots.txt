@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://anchi.idv.tw/sitemap.xml
-Sitemap: https://anchi.idv.tw/baidusitemap.xml
+Sitemap: https://hoxis.github.io/sitemap.xml
+Sitemap: https://hoxis.github.io/baidusitemap.xml
