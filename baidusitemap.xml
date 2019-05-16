@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://anchi.idv.tw/2017/10/05/first/</loc>
-    <lastmod>2019-05-16</lastmod>
-  </url>  <url>
     <loc>http://anchi.idv.tw/2019/05/08/%E5%AF%ABCSS%E4%B9%8B%E7%AE%97%E6%95%B8%E5%AD%B8/</loc>
     <lastmod>2019-05-16</lastmod>
   </url>  <url>
@@ -11,6 +8,9 @@
     <lastmod>2019-05-16</lastmod>
   </url>  <url>
     <loc>http://anchi.idv.tw/2019/05/16/%E7%B6%B2%E9%A0%81googleFont%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2019-05-16</lastmod>
+  </url>  <url>
+    <loc>http://anchi.idv.tw/2017/10/05/first/</loc>
     <lastmod>2019-05-16</lastmod>
   </url>  <url>
     <loc>http://anchi.idv.tw/2019/05/03/second/</loc>
