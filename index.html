@@ -417,6 +417,152 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://anchi.idv.tw/2019/05/15/http轉https後遇到的問題/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chian chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ChiAn">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/15/http轉https後遇到的問題/" itemprop="url">http 轉 https 後遇到的問題</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-15T18:00:00+08:00">
+                2019-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="http-轉-https-後遇到的問題"><a href="#http-轉-https-後遇到的問題" class="headerlink" title="http 轉 https 後遇到的問題"></a>http 轉 https 後遇到的問題</h2><ol>
+<li><p>直接到檔案內重置 http 為 https</p>
+</li>
+<li><p>有一些第一個方法改完還是沒有更改的，可以在瀏覽器的 DevTools 工具內搜尋 http，再到檔案內找尋這個 http 並修改為 https</p>
+</li>
+<li><p>在工具中也有 console 會報錯可以去找尋修改</p>
+</li>
+<li><p>有時太多可以直接在表頭加入</p>
+<p><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><br>//連外時，遇到 http 自動轉成 https 連線。</p>
+<p>他只會使原本 http 連線的，改為 https 請求所以會有幾個點要注意</p>
+<ul>
+<li>因為是改請求，故若要請求的資源沒有提供 https 就會被阻擋<br>可以透過 proxy 代理方式解決，代理用 http 取得資源再透過自己的頁面用 https 傳給自己的代理(<strong>請注意代理程式需有一定的保護</strong>)</li>
+<li><strong>在 IE 上不支援</strong></li>
+<li>有可能請求的資源本身不具備 SSL 連線</li>
+</ul>
+</li>
+</ol>
+<h2 id="參考網址-amp-設定資料"><a href="#參考網址-amp-設定資料" class="headerlink" title="參考網址 &amp; 設定資料"></a>參考網址 &amp; 設定資料</h2><ul>
+<li><p><a href="https://ithelp.ithome.com.tw/questions/10185482" title="bizpro大有解答" target="_blank" rel="noopener">在https中使用http</a></p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests" title="在那些瀏覽器上不支援" target="_blank" rel="noopener">CSP: upgrade-insecure-requests</a></p>
+</li>
+<li><p><a href="https://googlechrome.github.io/samples/csp-upgrade-insecure-requests/" title="GOOGLE的示範" target="_blank" rel="noopener">Upgrade Insecure Requests Sample</a></p>
+</li>
+<li><p><a href="https://imququ.com/post/sth-about-switch-to-https.html" target="_blank" rel="noopener">关于启用 HTTPS 的一些经验分享</a></p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://anchi.idv.tw/2019/05/15/版本控制/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1024,7 +1170,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1046,7 +1192,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
