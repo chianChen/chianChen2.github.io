@@ -1,6 +1,6 @@
 ---
 title: 小米6 國際版 root & GCAM 過程
-date: 2019/05/17 18:00:00
+date: 2019-05-17 18:00:00
 categories:
 - 米6
 tags:
