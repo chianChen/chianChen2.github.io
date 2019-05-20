@@ -20,7 +20,9 @@ tags:
 
 4. 有時太多可以直接在表頭加入
 
+   ```
    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+   ```
    //連外時，遇到 http 自動轉成 https 連線。
 
    他只會使原本 http 連線的，改為 https 請求所以會有幾個點要注意
