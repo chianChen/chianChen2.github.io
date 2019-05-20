@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="http 轉 https 後遇到的問題 直接到檔案內重置 http 為 https  有一些第一個方法改完還是沒有更改的，可以在瀏覽器的 DevTools 工具內搜尋 http，再到檔案內找尋這個 http 並修改為 https  在工具中也有 console 會報錯可以去找尋修改  有時太多可以直接在表頭加入 1&amp;lt;meta http-equiv=&amp;quot;Content-Security">
+<meta name="description" content="http 轉 https 後遇到的問題 直接到檔案內重置 http 為 https  有一些第一個方法改完還是沒有更改的，可以在瀏覽器的 DevTools 工具內搜尋 http，再到檔案內找尋這個 http 並修改為 https  在工具中也有 console 會報錯可以去找尋修改  有時太多可以直接在表頭加入 1&amp;lt;meta http-equiv=&quot;Content-Security-Poli">
 <meta name="keywords" content="http,https">
 <meta property="og:type" content="article">
 <meta property="og:title" content="http 轉 https 後遇到的問題">
 <meta property="og:url" content="http://anchi.idv.tw/2019/05/16/http轉https後遇到的問題/index.html">
 <meta property="og:site_name" content="ChiAn">
-<meta property="og:description" content="http 轉 https 後遇到的問題 直接到檔案內重置 http 為 https  有一些第一個方法改完還是沒有更改的，可以在瀏覽器的 DevTools 工具內搜尋 http，再到檔案內找尋這個 http 並修改為 https  在工具中也有 console 會報錯可以去找尋修改  有時太多可以直接在表頭加入 1&amp;lt;meta http-equiv=&amp;quot;Content-Security">
+<meta property="og:description" content="http 轉 https 後遇到的問題 直接到檔案內重置 http 為 https  有一些第一個方法改完還是沒有更改的，可以在瀏覽器的 DevTools 工具內搜尋 http，再到檔案內找尋這個 http 並修改為 https  在工具中也有 console 會報錯可以去找尋修改  有時太多可以直接在表頭加入 1&amp;lt;meta http-equiv=&quot;Content-Security-Poli">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-20T02:14:15.979Z">
+<meta property="og:updated_time" content="2019-05-20T02:14:30.713Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="http 轉 https 後遇到的問題">
-<meta name="twitter:description" content="http 轉 https 後遇到的問題 直接到檔案內重置 http 為 https  有一些第一個方法改完還是沒有更改的，可以在瀏覽器的 DevTools 工具內搜尋 http，再到檔案內找尋這個 http 並修改為 https  在工具中也有 console 會報錯可以去找尋修改  有時太多可以直接在表頭加入 1&amp;lt;meta http-equiv=&amp;quot;Content-Security">
+<meta name="twitter:description" content="http 轉 https 後遇到的問題 直接到檔案內重置 http 為 https  有一些第一個方法改完還是沒有更改的，可以在瀏覽器的 DevTools 工具內搜尋 http，再到檔案內找尋這個 http 並修改為 https  在工具中也有 console 會報錯可以去找尋修改  有時太多可以直接在表頭加入 1&amp;lt;meta http-equiv=&quot;Content-Security-Poli">
 
 
 
@@ -337,7 +337,7 @@
 <li><p>在工具中也有 console 會報錯可以去找尋修改</p>
 </li>
 <li><p>有時太多可以直接在表頭加入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;upgrade-insecure-requests&quot;&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Security-Policy"</span> <span class="attr">content</span>=<span class="string">"upgrade-insecure-requests"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>//連外時，遇到 http 自動轉成 https 連線。</p>
 <p>他只會使原本 http 連線的，改為 https 請求所以會有幾個點要注意</p>
 <ul>
