@@ -17,18 +17,20 @@ tags:
 再回 EMBED 有文件可以閱讀
 
 - 把下面的 link 放入 <head> 之間
+  ```html
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;subset=chinese-traditional" rel="stylesheet"> 
+  ```
 
 - 第二種方式 CSS 加入
-
+```html
   <style>
   @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&subset=chinese-traditional');
   </style> 
-
+```
 再到 CSS 定義字型
-
+```css
 font-family: 'Noto Sans TC', sans-serif;
-
+```
 就 OK 囉
 
 
