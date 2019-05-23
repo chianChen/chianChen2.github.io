@@ -8,6 +8,7 @@ install:
     - npm install # 安装hexo及插件
     - npm install hexo-generator-sitemap --save # 為網站產生sitemap
     - npm install hexo-generator-baidu-sitemap --save # 為網站產生百度sitemap
+    - npm install hexo-generator-searchdb --save # 安裝搜索服务Local Search
     - npm rebuild node-sass --force #该命令是根据构建失败的日志提示添加的
 before_install:
     - export TZ='Asia/Taipei' # 更改时区
