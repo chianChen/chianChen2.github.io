@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[blog-better]]></title>
+    <url>%2Fblog%E5%84%AA%E5%8C%96.html</url>
+    <content type="text"><![CDATA[blog優化拿掉 name 的 meta在主題的檔案夾下的 scripts 新增一個檔案 unregister_meta_generator.js 內容為 1hexo.extend.filter.unregister(&apos;after_render:html&apos;, require(&apos;../../../node_modules/hexo/lib/plugins/filter/meta_generator&apos;)); 再重新建置 blog 就會拿掉囉]]></content>
+      <tags>
+        <tag>blog</tag>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小米6 國際版 root & GCAM 過程]]></title>
+    <url>%2F%E5%B0%8F%E7%B1%B36%20%E5%9C%8B%E9%9A%9B%E7%89%88%20GCAM%20%E9%81%8E%E7%A8%8B.html</url>
+    <content type="text"><![CDATA[小米6 國際版 root &amp; GCAM 過程 解鎖 recovery ROOT 改檔案 安裝 GOOGLE camera 完成 Magisk ctsprofile false 解鎖 首先到 解鎖小米手機 申請解鎖，申請後須等待三天審核通過，如果已有權限將會自動跳轉至解鎖工具下載頁。 再到手機中登入已有解鎖權限的小米帳號，並進入 設定 -&gt; 開發者選項 -&gt; 裝置解鎖狀態 中綁定帳號與設備。 登錄成功後，手機進入FASTBOOT模式(關機後，同時按住開機鍵與音量下鍵) 我是有先執行MiUsbDriver.exe 執行剛剛載的 miflash_unlock.exe，開啟後登入小米帳號，就可以開始解鎖這裡我有遇到在 設定裝置解鎖狀態綁定 後三天才可解鎖 執行完畢後就完成小米解鎖囉 開啟ROOT原以為 到安全中心 -&gt; 應用管理 -&gt; 權限 就可以開啟了結果國際開發版不支援只好在自己刷 ROOT 權限了 RECOVERY 先下載 http://tw.miui.com/thread-25375-1-1.html 提供的 adb-setup-1.4.3 .exe 下載 TWRP for Xiaomi Mi 6 選 Primary (Americas) 下載 twrp-3.3.0-1-sagit.img 以系統管理員執行 adb-setup-1.4.3 .exe輸入 Y 並 enter 執行三次跳出驅動程式安裝精靈點擊下一步完成到 C:\adb下載 官方提供的ADB 並把 C:\adb 裡面的四個檔替換掉 手機進入FASTBOOT(關機後長按電源鍵與音量下鍵)手機與電腦連接開啟命令提示字元輸入指令 fastboot devices可看回應 xxxxxxxx fastboot 代表成功連結手機的 Fastboot 再把早前下載的 twrp-3.3.0-1-sagit.img 放到D槽 命令提示字元 輸入fastboot flash recovery D:\twrp-3.3.0-1-sagit.img得到 Fnished. 成功長按電源鍵與音量上鍵直到進入 Recovery ROOT到 official XDA thread 下載 Magisk直接把壓縮檔放到手機再把手機回到 Recovery 模式選安裝 選擇剛剛放入的 zip 檔滑動滑塊以安裝 Magisk最後點擊 restart 在此處下載最新的Magisk Manager APK 安裝他 打開後看到一堆綠色標記代表成功 改檔案下載並運行 終端模擬器 在命令行介面輸入 SU enter 授予終端機 root 權限 完成後就具有 root 權限了 繼續輸入 setprop persist.camera.HAL3.enabled 1 Enter鍵 重啟手機 安裝 Google Camera但都沒成功 QQ Google Camera 成功[Support][Feedback] GCam HDR+ for Mi6 使用最後一頁 zilan 提供的模組與app 模組裝完重啟並再裝 app 成功 Magisk ctsprofile false安裝兩個 Magisk 模組以通過SafetyNet的檢查 MagiskHide Props Config SafetyPatch 通過後就可以使用 Google Pay 囉 參考網址 &amp; 設定資料 小米手机解锁 Bootloader 教程以及常见问题 小米6使用Google Camera大幅提升拍照效果（不影响OTA） How to Install Magisk 手把手教你怎么root（TWRP卡刷方式，持续更新）]]></content>
+      <categories>
+        <category>米6</category>
+      </categories>
+      <tags>
+        <tag>Google Camera</tag>
+        <tag>root</tag>
+        <tag>解鎖</tag>
+        <tag>Google Pay</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[http 轉 https 後遇到的問題]]></title>
+    <url>%2Fhttp%E8%BD%89https%E5%BE%8C%E9%81%87%E5%88%B0%E7%9A%84%E5%95%8F%E9%A1%8C.html</url>
+    <content type="text"><![CDATA[http 轉 https 後遇到的問題 直接到檔案內重置 http 為 https 有一些第一個方法改完還是沒有更改的，可以在瀏覽器的 DevTools 工具內搜尋 http，再到檔案內找尋這個 http 並修改為 https 在工具中也有 console 會報錯可以去找尋修改 有時太多可以直接在表頭加入 1&lt;meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"&gt; //連外時，遇到 http 自動轉成 https 連線。 他只會使原本 http 連線的，改為 https 請求所以會有幾個點要注意 因為是改請求，故若要請求的資源沒有提供 https 就會被阻擋可以透過 proxy 代理方式解決，代理用 http 取得資源再透過自己的頁面用 https 傳給自己的代理(請注意代理程式需有一定的保護) 在 IE 上不支援 有可能請求的資源本身不具備 SSL 連線 參考網址 &amp; 設定資料 在https中使用http CSP: upgrade-insecure-requests Upgrade Insecure Requests Sample 关于启用 HTTPS 的一些经验分享]]></content>
+      <tags>
+        <tag>http</tag>
+        <tag>https</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[網頁上使用 google 字型]]></title>
+    <url>%2F%E7%B6%B2%E9%A0%81googleFont%E4%BD%BF%E7%94%A8.html</url>
+    <content type="text"><![CDATA[網頁上使用 google 字型這是 google 提供的字型 Noto Sans TC 要在網頁上使用很方便，選擇 SELECT THIS FONT 選擇 CUSTOMIZE 可以自訂一些選項 再回 EMBED 有文件可以閱讀 把下面的 link 放入 之間 1&lt;link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;amp;subset=chinese-traditional" rel="stylesheet"&gt; 第二種方式 CSS 加入 123&lt;style&gt;@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;subset=chinese-traditional');&lt;/style&gt; 再到 CSS 定義字型1font-family: 'Noto Sans TC', sans-serif; 就 OK 囉 參考網址 &amp; 設定資料google 繁體中文字型]]></content>
+      <categories>
+        <category>html</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>link</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JS、CSS、Images 版本控制]]></title>
+    <url>%2F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.html</url>
+    <content type="text"><![CDATA[JS、CSS、Images 版本控制之前就有一直遇到任何東西在chrome上的暫存問題 今天又遇到了檔案更新 想說之前有看過今天就來弄吧 其實很簡單 只要在 1&lt;script type="text/javascript" src="/js/drop.js?v=2.0"&gt;&lt;/script&gt; 你的js檔案後加上你想加的任何東西 當瀏覽器載入時遇到他就會再重新載入 但你的 drop.js 不用做任何動作 參考網址 &amp; 設定資料 簡易克服 CSS 被瀏覽器快取(Cache)的問題]]></content>
+      <tags>
+        <tag>css</tag>
+        <tag>js</tag>
+        <tag>images</tag>
+        <tag>版本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[寫CSS之算數學]]></title>
+    <url>%2F%E5%AF%ABCSS%E4%B9%8B%E7%AE%97%E6%95%B8%E5%AD%B8.html</url>
+    <content type="text"><![CDATA[寫CSS之算數學今天遇到一個問題 當大小 400*300 的圖 要塞進比例是 2.134：1 的框時 又想要她是垂直置中的 要怎麼做 試了幾個方法 vertical-align line-height top bottom 最後無法就使用 margin-top 負數來解決 100vw是我目前圖檔的寬 100vw*3/4是原始比例下的高 100vw/2.134是我目前圖檔的高 所以原始比例的高 減掉 目前的高 再除2 將會是我圖檔移動後置中的距離 (100vw3/4 - 100vw/2.134)/2 = 100vw 0.375 - 100vw 0.2343 = 0.1397 100vw 答案就是設定 1margin-top: calc(-100vw * 0.1397); 完成圖片置中顯示]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>CALC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[自動部屬設定]]></title>
+    <url>%2Fsecond.html</url>
+    <content type="text"><![CDATA[自動部屬設定可參考https://hadronw.com/2018/05-27/travis-autodeploy-github-with-coding/因有改theme所以要加一段在 12345before_install: - export TZ=&apos;Asia/Taipei&apos; # 更改时区 - npm install hexo-cli -g # 安装hexo环境 - git clone https://github.com/chianChen/hexo-theme-next themes/next - chmod +x ./publish-to-gh-pages.sh # 为shell文件添加可执行权限 記得要先去 Fork 原來 theme 標籤與分類因為我最後都是在github上直接修改檔案 所以我是直接在 我的 hexo 分支內的 source 分別建立 categories 與 tags 檔案夾 再到裡面建 index.md 內容分別是 12345---title: 文章分类date: 2019-05-08 00:00:00type: "categories"--- 與 12345---title: 文章標籤date: 2019-05-08 00:00:00type: "tags"--- 儲存後再到 Fork 出的主題包 hexo-theme-next 裡面修改 _config.yml 把這兩個 tags: /tags/ || tagscategories: /categories/ || th 前面的 # 拿掉 再去執行一次 travis 裡面的 Restart build 就成功囉]]></content>
+      <tags>
+        <tag>hexo設定</tag>
+        <tag>標籤設定</tag>
+        <tag>分類設定</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[first]]></title>
+    <url>%2Ffirst.html</url>
+    <content type="text"><![CDATA[Github SSH 連線打開git bash，查看是否已經存在ssh秘鑰12cd ~/.sshls 生成ssh秘鑰1ssh-keygen -C &quot;your_email@example.com&quot; 在 /c/Users/you/.ssh 路徑下看到剛生成的文件： id_rsa 和 id_rsa.pub，即公鑰和私鑰。 在GitHub帳戶中添加公鑰 登錄你的github，頭像處下拉框選擇settings。 進入設置頁後點擊側邊欄的 SSH and GPG keys 按鈕。 New SSH key 裡的 title 可以任意填，並且將上一步驟生成的 id_rsa.pub 的內容複製到這裡的 key 輸入框中 確認完成 github SSH 連線1ssh -T git@github.com 完成 hexo 指令清除快取檔案 (db.json) 和已產生的靜態檔案 (public)1hexo clean 產生靜態檔案 (hexo generate) 12hexo g (-d)#先產生靜態網站再部屬 部署網站 (hexo deploy) 12hexo d (-g)#在部屬前先產生靜態網站 啟動伺服器 (hexo server)，啟動後 http://localhost:4000/1hexo s 參考網址 &amp; 設定資料 手把手教你使用 Hexo + Github Pages 搭建个人独立博客 Hexo 指令 NexT 主題使用頁 SSH秘鑰生成]]></content>
+  </entry>
+</search>
