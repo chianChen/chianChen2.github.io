@@ -27,3 +27,9 @@ env:
     global:
         # Github Pages
         - GH_REF: github.com/chianChen/chianChen.github.io.git #设置GH_REF，注意更改成自己的仓库地址
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
