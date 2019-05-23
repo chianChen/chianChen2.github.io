@@ -8,7 +8,7 @@ tags:
 - hexo
 - next
 keywords: ['next','blog優化']
-description: '使用 hexo 主題為 next 創建的 blog 優化。'
+description: 使用 hexo 主題為 next 創建的 blog 優化。
 
 ---
 
