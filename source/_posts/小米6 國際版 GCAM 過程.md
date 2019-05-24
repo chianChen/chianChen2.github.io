@@ -1,6 +1,7 @@
 ---
 title: 小米6 國際版 root & GCAM 過程
 date: 2019-05-17 18:00:00
+updated: 2019-05-24 12:00:00
 categories:
 - 米6
 tags:
@@ -17,11 +18,11 @@ description: '為小米六解鎖並 ROOT 再裝 Google Camera 與一些不錯用
 
 1. [解鎖](#解鎖)
 2. [RECOVERY](#RECOVERY)
-3. ROOT
-4. 改檔案
-5. 安裝 GOOGLE camera
+3. [ROOT](#ROOT)
+4. [改檔案](#改檔案)
+5. [安裝 GOOGLE camera](#Google Camera 成功)
 6. 完成
-7. Magisk ctsprofile false
+7. [Magisk ctsprofile false](#Magisk ctsprofile false)
 
 ## 解鎖
 
