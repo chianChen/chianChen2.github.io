@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[blog-better]]></title>
-    <url>%2Fblog%E5%84%AA%E5%8C%96.html</url>
+    <title><![CDATA[blog優化]]></title>
+    <url>%2Fblog-better.html</url>
     <content type="text"><![CDATA[blog優化拿掉 name 的 meta在主題的檔案夾下的 scripts 新增一個檔案 unregister_meta_generator.js 內容為 1hexo.extend.filter.unregister(&apos;after_render:html&apos;, require(&apos;../../../node_modules/hexo/lib/plugins/filter/meta_generator&apos;)); 再重新建置 blog 就會拿掉囉]]></content>
       <tags>
         <tag>blog</tag>
