@@ -110,6 +110,10 @@ fastboot flash recovery D:\twrp-3.3.0-1-sagit.img
 
 通過後就可以使用 Google Pay 囉
 
+## APP
+- YouTube Vanced
+
+
 ## 參考網址 & 設定資料
 
 - [小米手机解锁 Bootloader 教程以及常见问题](http://www.miui.com/thread-3367802-1-1.html)
