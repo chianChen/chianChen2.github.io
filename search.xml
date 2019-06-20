@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PHP put data in file]]></title>
+    <url>%2FputDataInFile.html</url>
+    <content type="text"><![CDATA[123456789101112131415161718192021222324252627&lt;?$schcidr="192.168.0.0/16";$ip=$_SERVER["REMOTE_ADDR"];//檢查是否為內網function cidr_match($ip, $range)&#123; list ($subnet, $bits) = explode('/', $range); if ($bits === null) &#123; $bits = 32; &#125; $ip = ip2long($ip); $subnet = ip2long($subnet); $mask = -1 &lt;&lt; (32 - $bits); $subnet &amp;= $mask; # nb: in case the supplied subnet wasn't correctly aligned return ($ip &amp; $mask) == $subnet;&#125;//檢查為 內網 或是 在主機端直接執行if(cidr_match($ip, $schcidr) or empty($ip))&#123; $fname = "/u/www/travel/b2c/addfile/citytest/".date('Y-m-d').".html"; //開啟檔案，若檔案不存在則會試著建立 $fd=fopen($fname,"w"); fwrite($fd,$showdata); fclose($fd); //檢查 檔案存在 且 權限不是646 時執行權限設定 if(file_exists($fname) &amp;&amp; substr(decoct(fileperms($fname)), 2) != '0646') chmod($fname, 0646);&#125;?&gt;]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>檢查內網</tag>
+        <tag>CHMOD權限設定</tag>
+        <tag>抓資料存成檔案</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[blog優化]]></title>
     <url>%2Fblog-better.html</url>
     <content type="text"><![CDATA[blog優化拿掉 name 的 meta在主題的檔案夾下的 scripts 新增一個檔案 unregister_meta_generator.js 內容為 1hexo.extend.filter.unregister(&apos;after_render:html&apos;, require(&apos;../../../node_modules/hexo/lib/plugins/filter/meta_generator&apos;)); 再重新建置 blog 就會拿掉囉]]></content>
