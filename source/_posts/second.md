@@ -9,9 +9,9 @@ tags:
 ---
 
 # 自動部屬設定
-
+使用 Travis CI 自動部屬 Hexo
 可參考
-https://hadronw.com/2018/05-27/travis-autodeploy-github-with-coding/
+https://hadronw.com/2018/05/27/travis-autodeploy-github-with-coding/
 因有改theme
 所以要加一段在
 
