@@ -1,0 +1,38 @@
+---
+title: 設定圖片置中顯示
+date: 2020-01-14 12:00:00
+categories:
+- html
+tags:
+
+keywords: ['html','CSS','圖片置中']
+description: '設定圖片置中顯示'
+---
+
+
+
+設定圖片置中顯示
+一、這次解法
+
+```html
+<div style='background:url(圖片路徑) no-repeat center center;background-size: cover;' class='bgimg'></div>
+```
+
+```CSS
+.bgimg {
+    width: 500px;
+    height: 281px;
+}
+```
+
+二、未試過
+
+```html
+<div class="div1">
+    <img src="1.jpg" width="500" height="300" alt="" />
+</div>
+'''css
+.div1{width:100px;height:100px;position:relative;}
+.div1 img{widht:500px;height:300px;position:absolute;left:-250px;top:-150px;}
+'''
+```
